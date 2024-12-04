@@ -2,15 +2,12 @@ const inputBox = document.getElementById('input-box');
 const showList = document.getElementById('list');
 
 function addToList() {
-    if(inputBox.value === ''){
-        alert("Do you wanna add something to the list?");
-    }
-    else{
+    if(inputBox.value !== ''){
         let li = document.createElement("li");
         li.innerHTML =inputBox.value;
         showList.appendChild(li);
         let span = document.createElement("span");
-        span.innerHTML = "*"; //delete button
+        span.innerHTML = "delete.png"; //delete button
         li.appendChild(span);
     }
     inputBox.value = '';

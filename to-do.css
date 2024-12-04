@@ -6,6 +6,37 @@
     padding: 0;
     box-sizing:border-box;
 }*/
+header {
+    border: 2px black solid;
+    border-radius: 25px;
+    padding: 10px 0;
+    margin: 20px auto;
+    text-align: center;
+    background-color: antiquewhite;
+}
+h2{
+    text-align: center;
+}
+.input-area{
+    border: 2px black solid;
+    border-radius: 25px;
+    padding: 10px 0;
+    margin: auto 50px;
+    display: flex;
+    align-content: center;
+    justify-content:space-around;
+}
+input{
+    border: none;
+    outline: none;
+}
+button{
+    border-radius:25px;
+    background-color:antiquewhite;
+    padding: 5px;
+    cursor:pointer;
+}
+
 ul li{
     list-style: none;
     cursor: pointer;
@@ -13,12 +44,12 @@ ul li{
 }
 ul li::before{
     content:'';
-    background-image: url(radio-button.png);
+    background-image: url(box.png);
     position: absolute;
 }
 ul li.checked{
     text-decoration: line-through;
 }
 ul li.checked::before{
-    background-image: url(checked.png);
+    background-image: url(check.png);
 }
